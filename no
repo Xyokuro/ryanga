@@ -1,0 +1,61 @@
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Name = "Frame"
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.423320651, 0, 0.22251308, 0)
+Frame.Size = UDim2.new(0, 228, 0, 161)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(34, 34, 34)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.120
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(-0.0307017546, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 228, 0, 50)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "Gay ryan script"
+TextLabel.TextColor3 = Color3.fromRGB(0, 255, 255)
+TextLabel.TextSize = 32.000
+TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 0, 255)
+TextLabel.TextStrokeTransparency = 0.000
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.Position = UDim2.new(0.572777033, 0, 0.419092029, 0)
+TextButton.Size = UDim2.new(0, 91, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Op WalkSpeed"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+TextButton.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed=100
+end)
+
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.Position = UDim2.new(0.0634714067, 0, 0.419092029, 0)
+TextButton_2.Size = UDim2.new(0, 91, 0, 50)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Op Jumpower"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
+TextButton_2.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower=100
+end)
