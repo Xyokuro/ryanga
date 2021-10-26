@@ -6,6 +6,7 @@ local TextLabel = Instance.new("TextLabel")
 local TextButton = Instance.new("TextButton")
 local TextButton_2 = Instance.new("TextButton")
 
+--Properties:
 
 ScreenGui.Parent = game.CoreGui
 
@@ -13,7 +14,7 @@ Frame.Name = "Frame"
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BackgroundTransparency = 1.000
-Frame.Position = UDim2.new(0.423320651, 0, 0.22251308, 0)
+Frame.Position = UDim2.new(0.711026609, 0, 0.578534007, 0)
 Frame.Size = UDim2.new(0, 228, 0, 161)
 Frame.Image = "rbxassetid://3570695787"
 Frame.ImageColor3 = Color3.fromRGB(34, 34, 34)
@@ -25,7 +26,6 @@ TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(-0.0307017546, 0, 0, 0)
 TextLabel.Size = UDim2.new(0, 228, 0, 50)
 TextLabel.Font = Enum.Font.SciFi
 TextLabel.Text = "Gay ryan script"
@@ -46,6 +46,7 @@ TextButton.TextSize = 14.000
 TextButton.MouseButton1Down:connect(function()
 	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed=100
 end)
+
 
 TextButton_2.Parent = Frame
 TextButton_2.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
